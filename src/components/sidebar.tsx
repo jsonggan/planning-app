@@ -16,7 +16,7 @@ import {
   PowerIcon,
 } from "@heroicons/react/24/solid";
  
-export default function Example() {
+export default function Sidebar() {
   return (
     <Card className="fixed top-4 left-4 h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5">
       <div className="mb-2 p-4">
@@ -27,30 +27,12 @@ export default function Example() {
       <List>
         <ListItem>
           <ListItemPrefix>
-            <PresentationChartBarIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Dashboard
-        </ListItem>
-        <ListItem>
-          <ListItemPrefix>
-            <ShoppingBagIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          E-Commerce
-        </ListItem>
-        <ListItem>
-          <ListItemPrefix>
             <InboxIcon className="h-5 w-5" />
           </ListItemPrefix>
           Inbox
           <ListItemSuffix>
             <Chip value="14" size="sm" variant="ghost" color="blue-gray" className="rounded-full" />
           </ListItemSuffix>
-        </ListItem>
-        <ListItem>
-          <ListItemPrefix>
-            <UserCircleIcon className="h-5 w-5" />
-          </ListItemPrefix>
-          Profile
         </ListItem>
         <ListItem>
           <ListItemPrefix>
