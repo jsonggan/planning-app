@@ -1,25 +1,25 @@
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
 
-export interface sideBarState {
+export interface sidebarState {
   value: boolean
 }
 
-const initialState: sideBarState = {
+const initialState: sidebarState = {
   value: false,
 }
 
-export const sideBarSlice = createSlice({
-  name: 'sideBar',
+export const sidebarSlice = createSlice({
+  name: 'sidebar',
   initialState,
   reducers: {
-    onSideBarChange: (state, action: PayloadAction<boolean>) => {
+    onSidebarChange: (state, action: PayloadAction<boolean>) => {
       state.value = action.payload
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { onSideBarChange } = sideBarSlice.actions;
+export const { onSidebarChange } = sidebarSlice.actions;
 
-export default sideBarSlice.reducer;
+export default sidebarSlice.reducer;

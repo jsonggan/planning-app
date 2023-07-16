@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import pagePaddingReducer from './page-padding';
-import sideBarReducer from './side-bar';
+import sidebarReducer from './sidebar';
 
 export const store = configureStore({
   reducer: {
     pagePadding: pagePaddingReducer,
-    sideBar: sideBarReducer,
+    sidebar: sidebarReducer,
   },
 })
 

@@ -10,16 +10,16 @@ import pagePaddingConfig from '../data/style.json';
 import type { RootState } from '../redux/store';
 import { useSelector, useDispatch } from 'react-redux';
 import { onPaddingChange } from '../redux/page-padding';
-import { onSideBarChange } from '../redux/side-bar';
+import { onSidebarChange } from '../redux/sidebar';
 
 function Todo() {
   // redux
   const pagePadding = useSelector((state: RootState) => state.pagePadding.value)
-  const sideBar = useSelector((state: RootState) => state.sideBar.value)
+  const sidebar = useSelector((state: RootState) => state.sidebar.value)
   const dispatch = useDispatch()
 
   const toggleSidebar = () => {
-    dispatch(onSideBarChange(sideBar));
+    dispatch(onSidebarChange(sidebar));
   };
 
   useEffect(() => {
@@ -53,9 +53,9 @@ function Todo() {
   };
 
   return (
-    <div className={`page-container ${sideBar ? 'ml-80' : ''}`}>
+    <div className={`page-container ${sidebar ? 'ml-80' : ''}`}>
       <button onClick={toggleSidebar}>Toggle</button>
-      {sideBar && <Sidebar />}
+      {sidebar && <Sidebar />}
       <div className='pt-padding-heading1' style={pageContentStyle}>
         <h1 className="text-3xl font-bold">
           Task
