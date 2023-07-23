@@ -13,7 +13,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { onSidebarChange } from '../redux/sidebar';
 import { onMousePositionChange } from '../redux/mousePosition';
 
-function Todo() {
+function Planning() {
   // redux
   const pagePadding = useSelector((state: RootState) => state.pagePadding.value);
   const sidebar = useSelector((state: RootState) => state.sidebar.value);
@@ -55,16 +55,12 @@ function Todo() {
         {/* {sidebar && <Sidebar />} */}
         <div className='pt-padding-heading1' style={pageContentStyle}>
           <h1 className="text-3xl font-bold">
-            Task
+            Planning
           </h1>
-          <div className='pt-padding-component-medium'></div>
-          {todoList['todolist'].map((title, index) => (
-            <TodoListComponent key={index} title={title} index={index}/>
-          ))}
         </div>
       </div>
     </div>
   );
 }
 
-export default Todo;
+export default Planning;

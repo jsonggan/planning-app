@@ -8,6 +8,8 @@ import { store } from './redux/store';
 
 // @material-tailwind/react
 import { ThemeProvider } from "@material-tailwind/react";
+import Todo from './pages/todo';
+import Planning from './pages/planning';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,7 +18,7 @@ root.render(
   <React.StrictMode>
     <ThemeProvider>
       <Provider store={store}>
-        <App />
+          <App />
       </Provider>
     </ThemeProvider>
   </React.StrictMode>

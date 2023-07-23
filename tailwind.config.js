@@ -34,6 +34,9 @@ module.exports = withMT({
       },
       borderRadius: {
         '4xl': '2rem',
+      },
+      size: {
+        'sidebar': '20rem'
       }
     }
   },

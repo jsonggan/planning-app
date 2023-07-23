@@ -3,5 +3,8 @@
     "minPadding": 3,
     "vwWhenMinPadding": 900,
     "parameter": 6.2
+  },
+  "size":{
+    "sidebar": "20"
   }
 }
